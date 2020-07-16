@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		22D0C8C924C09B0100E2DDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D0C8C724C09B0100E2DDE8 /* LaunchScreen.storyboard */; };
 		22D0C8D424C09B0100E2DDE8 /* local_and_remote_packagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0C8D324C09B0100E2DDE8 /* local_and_remote_packagesTests.swift */; };
 		22D0C8DF24C09B0100E2DDE8 /* local_and_remote_packagesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D0C8DE24C09B0100E2DDE8 /* local_and_remote_packagesUITests.swift */; };
+		22D0C8EE24C09BCE00E2DDE8 /* UserDefault in Frameworks */ = {isa = PBXBuildFile; productRef = 22D0C8ED24C09BCE00E2DDE8 /* UserDefault */; };
+		22D0C8F124C09BF500E2DDE8 /* KeyboardLayoutPublisher in Frameworks */ = {isa = PBXBuildFile; productRef = 22D0C8F024C09BF500E2DDE8 /* KeyboardLayoutPublisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D0C8F124C09BF500E2DDE8 /* KeyboardLayoutPublisher in Frameworks */,
+				22D0C8EE24C09BCE00E2DDE8 /* UserDefault in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				22D0C8D224C09B0100E2DDE8 /* local-and-remote-packagesTests */,
 				22D0C8DD24C09B0100E2DDE8 /* local-and-remote-packagesUITests */,
 				22D0C8B724C09B0000E2DDE8 /* Products */,
+				22D0C8EF24C09BF500E2DDE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +144,13 @@
 			path = "local-and-remote-packagesUITests";
 			sourceTree = "<group>";
 		};
+		22D0C8EF24C09BF500E2DDE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +167,10 @@
 			dependencies = (
 			);
 			name = "local-and-remote-packages";
+			packageProductDependencies = (
+				22D0C8ED24C09BCE00E2DDE8 /* UserDefault */,
+				22D0C8F024C09BF500E2DDE8 /* KeyboardLayoutPublisher */,
+			);
 			productName = "local-and-remote-packages";
 			productReference = 22D0C8B624C09B0000E2DDE8 /* local-and-remote-packages.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 22D0C8AD24C09B0000E2DDE8;
+			packageReferences = (
+				22D0C8EC24C09BCE00E2DDE8 /* XCRemoteSwiftPackageReference "UserDefault" */,
+			);
 			productRefGroup = 22D0C8B724C09B0000E2DDE8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -598,6 +617,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22D0C8EC24C09BCE00E2DDE8 /* XCRemoteSwiftPackageReference "UserDefault" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:loop-software/UserDefault.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22D0C8ED24C09BCE00E2DDE8 /* UserDefault */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22D0C8EC24C09BCE00E2DDE8 /* XCRemoteSwiftPackageReference "UserDefault" */;
+			productName = UserDefault;
+		};
+		22D0C8F024C09BF500E2DDE8 /* KeyboardLayoutPublisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KeyboardLayoutPublisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		22D0C8BD24C09B0000E2DDE8 /* local_and_remote_packages.xcdatamodeld */ = {

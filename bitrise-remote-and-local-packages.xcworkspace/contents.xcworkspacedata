@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:KeyboardLayoutPublisher-master">
+   </FileRef>
+   <FileRef
       location = "group:local-and-remote-packages/local-and-remote-packages.xcodeproj">
    </FileRef>
 </Workspace>

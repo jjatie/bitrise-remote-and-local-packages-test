@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "UserDefault",
+        "repositoryURL": "git@github.com:loop-software/UserDefault.git",
+        "state": {
+          "branch": null,
+          "revision": "bf04fe66682459bc2891007cf1dd66c5a324d0a5",
+          "version": "0.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
